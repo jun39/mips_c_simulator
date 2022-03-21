@@ -30,7 +30,7 @@ void decoder5(Signal a[5], Word *b)
             val += (1 << i);
         }
     }
-    /* Exercise 6-1 */
+    
     // b->bit[val]の値のみを1にし、それ以外を0にする
     for(i=0;i<32;++i){
         if(i==val){
@@ -43,7 +43,7 @@ void decoder5(Signal a[5], Word *b)
 
 void mux32(Word ins[32], Signal ctls[5], Word *out)
 {
-    /* Exercise 6-1 */
+    
     int selected;
     selected=0;
     for (int i = 0; i < 5; ++i) {
@@ -57,7 +57,7 @@ void mux32(Word ins[32], Signal ctls[5], Word *out)
 
 void register_file_run(RegisterFile *rf, Signal register_write, Signal *read1, Signal *read2, Signal *write1, Word wdata, Word *rdata1, Word *rdata2)
 {
-    /* Exercise 6-1 */
+    
     Word DecodedWrite1,innerRead;
     Word ins[32];
     Signal wctl;

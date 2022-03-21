@@ -18,7 +18,6 @@ void mips_run(MIPS *m, int inst_num)
     int j;
 
     for (i = 0; i < inst_num; ++i) {
-        /* Exercise 8-1 */
         Signal judge_over=false;
         // m->imから命令コードを取り出す
         int int_pc=register_get_value(&(m->pc));
